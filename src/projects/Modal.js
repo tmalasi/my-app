@@ -1,14 +1,23 @@
-function Modal ({project}){
-    return (
-        <div class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>{project.title}</h2>
-            <p>{project.details}</p>
-            <img src={project.image} alt={project.title} className="project-image" />
-        <a href={project.repoLink} className="btn btn-primary project-link" target="_blank" rel="noreferrer">View Repository</a>
-    </div>  
+import React from "react";
+
+function Modal({onClose, title, details, image, repoLink }) {
+
+
+  return (
+    <div className="modal">
+      <div className="modal-content">
+        <span className="close" onClick={onClose}>
+          &times;
+        </span>
+        <h2>{title}</h2>
+        <p>{details}</p>
+        <img src={image} alt={title} className="project-image" />
+        <a href={repoLink} className="btn btn-primary project-link" target="_blank" rel="noopener noreferrer">
+          View Repository
+        </a>
+      </div>
     </div>
-    );
+  );
 }
+
 export default Modal;

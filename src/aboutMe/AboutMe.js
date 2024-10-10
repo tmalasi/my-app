@@ -1,9 +1,12 @@
+import React from "react";
+import imgAbutMe from "../image/professional-picture.jpg";
+
 function AboutMe() {
   return (
     <section class="aboutMe" id="about">
       <div class="aboutMe-container">
         <div class="aboutMe-photo">
-          <img src="images/professional-picture.jpg" alt="aboutMe-img"></img>
+          <img src={imgAbutMe} alt="aboutMe-img"></img>
         </div>
         <div class="aboutMe-content">
           <h1 class="background">Background & Experience</h1>

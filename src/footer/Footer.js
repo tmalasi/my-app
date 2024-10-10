@@ -1,4 +1,6 @@
+import React from "react";
 import NavLinks from "../header/NavLinks"
+
 const socialLinks = [
     { href: 'https://github.com/tmalasi', iconClass: 'bi bi-github' },
     { href: 'https://discord.com/users/_tuci', iconClass: 'bi bi-discord' },

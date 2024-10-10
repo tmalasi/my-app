@@ -1,8 +1,10 @@
 import EventForm from './EventForm';
 import Reminders from './Reminders';
-import CalendarHeader from './CalendarHeader';
+import CalendarHeadler from './CalendarHeadler';
 import CalendarTable from './CalendarTable';
 import JumpTo from './JumpTo';
+import React from "react";
+
 
 function Calendar() {
   return (
@@ -15,7 +17,7 @@ function Calendar() {
             <Reminders />
           </div>
           <div id="right">
-            <CalendarHeader />
+            <CalendarHeadler />
             <CalendarTable />
             <JumpTo />
           </div>

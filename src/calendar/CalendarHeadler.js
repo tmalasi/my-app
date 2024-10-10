@@ -1,5 +1,6 @@
+import React from "react";
 
-function CalendarHeader() {
+function CalendarHeadler() {
   return (
     <>
       <h3 id="monthAndYear"></h3>
@@ -11,4 +12,4 @@ function CalendarHeader() {
   );
 }
 
-export default CalendarHeader;
+export default CalendarHeadler;

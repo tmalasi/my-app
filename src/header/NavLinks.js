@@ -1,12 +1,14 @@
+import React from "react";
+
 // NavLinks.js
+const links = [
+  { href: '#home', text: 'Home' },
+  { href: '#about', text: 'About' },
+  { href: '#projects', text: 'Projects' },
+  { href: '#skills', text: 'Skills' },
+  { href: '#contact', text: 'Contact' },
+];
 function NavLinks() {
-    const links = [
-      { href: '#home', text: 'Home' },
-      { href: '#about', text: 'About' },
-      { href: '#projects', text: 'Projects' },
-      { href: '#skills', text: 'Skills' },
-      { href: '#contact', text: 'Contact' },
-    ];
   
     return (
       <ul className="nav-links">

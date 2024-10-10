@@ -8,6 +8,9 @@ import Skills from './skills/Skills';
 import Contact from './contact/Contact';
 import Footer from './footer/Footer';
 import Calendar from './calendar/Calendar';
+import './style.css';
+
+
 
 function App() {
   return (
