@@ -446,7 +446,6 @@ nav a:hover::after {
 .project-card {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .card-body {
@@ -862,6 +861,7 @@ hr.my-4 {
   border: none;
   padding: 5px 10px;
   margin-left: 10px;
+  display: none;
 }
 
 .button-container-calendar {

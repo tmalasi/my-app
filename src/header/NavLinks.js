@@ -1,25 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-// NavLinks.js
 const links = [
-  { href: '#home', text: 'Home' },
-  { href: '#about', text: 'About' },
-  { href: '#projects', text: 'Projects' },
-  { href: '#skills', text: 'Skills' },
-  { href: '#contact', text: 'Contact' },
+  { href: '/', text: 'Home' },
+  { href: '/dashboard/about', text: 'About' },
+  { href: '/dashboard/projects', text: 'Projects' },
+  { href: '/dashboard/contact', text: 'Contact' },
+  { href: '/dashboard/calendar', text: 'Calendar' },
 ];
+
 function NavLinks() {
-  
-    return (
-      <ul className="nav-links">
-        {links.map((link, index) => (
-          <li key={index}>
-            <a href={link.href}>{link.text}</a>
-          </li>
-        ))}
-      </ul>
-    );
-  }
-  
-  export default NavLinks;
-  
+  return (
+    <ul className="nav-links">
+      {links.map((link, index) => (
+        <li key={index}>
+          <Link to={link.href}>{link.text}</Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export default NavLinks;

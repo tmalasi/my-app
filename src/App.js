@@ -18,10 +18,10 @@ function App() {
       <Header/>
       <HeroSection/>
       <AboutMe/>
-      <Projects/>
+      {/* <Projects/> */}
       <Skills/>
-      <Contact/>
-      <Calendar/>
+      {/* <Contact/> */}
+      {/* <Calendar/> */}
       <Footer/>
     </div>
   );
