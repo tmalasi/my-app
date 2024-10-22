@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
+import Header from "../header/Header";
+import { useNavigate } from "react-router-dom";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -10,6 +11,7 @@ function Contact() {
   const [emailError, setEmailError] = useState(false);
   const [subjectError, setSubjectError] = useState(false);
   const [messageError, setMessageError] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,25 +34,21 @@ function Contact() {
       setMessageError(true);
       isValid = false;
     }
-    if(!isValid){
-      return;
-    }
+  
 
     if (isValid) {
        alert("Form submitted successfully!");
-       return;
+       setName("");
+       setEmail("");
+       setSubject("");
+       setMessage("");
+       navigate(`/`);
     }
-
-   
-
-    // Reset fields
-    setName("");
-    setEmail("");
-    setSubject("");
-    setMessage("");
   };
 
   return (
+    <>
+    <Header/>
     <section className="contact" id="contact">
       <h1 className="section-title text-center">Contact Me</h1>
       <div className="container" id="containerForms">
@@ -145,6 +143,7 @@ function Contact() {
         </form>
       </div>
     </section>
+    </>
   );
 }
 
